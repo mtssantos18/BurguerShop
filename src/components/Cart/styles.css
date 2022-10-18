@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+:root {
+  --grey-0: #f5f5f5;
+  --grey-20: #e0e0e0;
+  --grey-50: #828282;
+  --grey-100: #333333;
+  --color-primary: #27ae60;
+  --white: #ffffff;
+  --font-inter: Inter;
+}
+
+.cart {
+  width: 95%;
+  min-width: 270px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 1rem 1rem;
+
+  font-family: var(--font-inter);
+}
+.title {
+  height: 55px;
+
+  background-color: var(--color-primary);
+  color: var(--white);
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px 5px 0px 0px;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.emptyCart {
+  background-color: var(--grey-0);
+  min-height: 200px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.cartProducts {
+  background-color: var(--grey-0);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+
+  max-height: 350px;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.emptyCart h2 {
+  color: var(--grey-100);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.emptyCart p {
+  color: var(--grey-50);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 600px) {
+  .cart {
+    max-width: 350px;
+  }
+}

@@ -1,0 +1,50 @@
+.productList {
+  display: flex;
+  gap: 1rem;
+
+  width: 100%;
+
+  padding: 1rem 1rem;
+
+  overflow-x: scroll;
+  overflow-y: visible;
+}
+
+@media screen and (min-width: 600px) {
+  .productList {
+    flex-flow: row wrap;
+
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 0;
+
+    width: 50%;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .productList {
+    flex-flow: row wrap;
+
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 0;
+
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .productList {
+    flex-flow: row wrap;
+
+    padding-top: 1rem;
+    padding-left: 10rem;
+    padding-right: 0;
+
+    width: 60%;
+  }
+}

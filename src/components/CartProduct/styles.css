@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+:root {
+  --grey-0: #f5f5f5;
+  --grey-20: #e0e0e0;
+  --grey-50: #828282;
+  --grey-100: #333333;
+  --grey-btn: #bdbdbd;
+  --color-primary: #27ae60;
+  --white: #ffffff;
+  --font-inter: Inter;
+}
+
+.cartCard {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  padding: 0.5rem;
+
+  font-family: var(--font-inter);
+}
+
+.imgDiv {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-color: var(--grey-20);
+}
+
+.imgDiv img {
+  width: 70px;
+  height: 70px;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+
+  max-width: 100px;
+}
+
+.productInfo p {
+  font-size: 18px;
+  font-weight: 700;
+
+  color: var(--grey-100);
+}
+
+.productInfo small {
+  font-size: 12px;
+  font-weight: 400;
+
+  color: var(--grey-50);
+}
+
+.cartCard button {
+  background-color: transparent;
+
+  border: none;
+
+  color: var(--grey-btn);
+
+  cursor: pointer;
+}
+
+.cartCard button:hover {
+  color: var(--grey-50);
+}
